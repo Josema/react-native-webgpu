@@ -4,6 +4,8 @@ const getWebMetroConfig = require('./getWebMetroConfig');
 
 const root = path.resolve(__dirname, '../..');
 const threePackagePath = path.resolve(root, 'node_modules/three');
+const reactNativePath = path.resolve(root, "node_modules/react-native");
+const reactPath = path.resolve(root, "node_modules/react");
 
 const r3fPath = path.resolve(root, "node_modules/@react-three/fiber");
 const defaultConfig = getDefaultConfig(__dirname);
@@ -12,8 +14,15 @@ const customConfig = {
   watchFolders: [root],
   resolver: {
     ...defaultConfig.resolver,
+    disableHierarchicalLookup: true,
+    nodeModulesPaths: [
+      path.resolve(__dirname, "node_modules"),
+      path.resolve(root, "node_modules"),
+    ],
     extraNodeModules: {
       'three': threePackagePath,
+      react: reactPath,
+      'react-native': reactNativePath,
     },
     resolveRequest: (context, moduleName, platform) => {
       if (moduleName.startsWith('three/addons/')) {

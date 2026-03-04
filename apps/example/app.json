@@ -27,6 +27,7 @@
     ]
   },
   "ios": {
+    "bundleIdentifier": "com.example.reactnativewebgpu",
     "metalAPIValidation": false
   },
   "macos": {

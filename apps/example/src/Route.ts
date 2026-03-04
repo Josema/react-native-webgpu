@@ -20,6 +20,7 @@ export type Routes = {
   DeferedRendering: undefined;
   ReversedZ: undefined;
   Wireframe: undefined;
+  Cornell: undefined;
   Resize: undefined;
   Tests: undefined;
   GradientTiles: undefined;

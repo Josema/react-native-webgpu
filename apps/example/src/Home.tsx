@@ -108,6 +108,10 @@ export const examples = [
     title: "🧬 Wireframe",
   },
   {
+    screen: "Cornell",
+    title: "📦 Cornell Box",
+  },
+  {
     screen: "Resize",
     title: "↔️ Resize",
   },
