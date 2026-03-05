@@ -1,0 +1,204 @@
+#pragma once
+
+#include <memory>
+#include <span>
+#include <string>
+#include <vector>
+
+#include "Canvas.h"
+#include "GPU.h"
+#include "GPUCanvasContext.h"
+#include "ImageBitmap.h"
+#include "NativeObject.h"
+#include "PlatformContext.h"
+#include "Promise.h"
+#include "SurfaceRegistry.h"
+#include "host/JSDispatcher.h"
+
+#include "JSIConverter.h"
+
+namespace rnwgpu {
+
+namespace jsi = facebook::jsi;
+
+struct Blob {
+  std::string blobId;
+  double size;
+  double offset;
+  std::string type;
+  std::string name;
+};
+
+template <> struct JSIConverter<std::shared_ptr<Blob>> {
+  static std::shared_ptr<Blob>
+  fromJSI(jsi::Runtime &runtime, const jsi::Value &arg, bool outOfBounds) {
+    if (!outOfBounds && arg.isObject()) {
+      auto result = std::make_unique<Blob>();
+      auto val = arg.asObject(runtime);
+      if (val.hasProperty(runtime, "_data")) {
+        auto value = val.getPropertyAsObject(runtime, "_data");
+        result->blobId = JSIConverter<std::string>::fromJSI(
+            runtime, value.getProperty(runtime, "blobId"), false);
+        result->size = JSIConverter<double>::fromJSI(
+            runtime, value.getProperty(runtime, "size"), false);
+        result->offset = JSIConverter<double>::fromJSI(
+            runtime, value.getProperty(runtime, "offset"), false);
+      }
+      return result;
+    }
+
+    throw std::runtime_error("Invalid Blob::fromJSI()");
+  }
+
+  static jsi::Value toJSI(jsi::Runtime &runtime, std::shared_ptr<Blob> arg) {
+    (void)runtime;
+    (void)arg;
+    throw std::runtime_error("Invalid Blob::toJSI()");
+  }
+};
+
+class WebGPUHostObject : public NativeObject<WebGPUHostObject> {
+public:
+  static constexpr const char *CLASS_NAME = "WebGPUHost";
+
+  explicit WebGPUHostObject(std::shared_ptr<GPU> gpu,
+                            std::shared_ptr<PlatformContext> platformContext,
+                            std::shared_ptr<host::JSDispatcher> jsDispatcher)
+      : NativeObject(CLASS_NAME), _gpu(std::move(gpu)),
+        _platformContext(std::move(platformContext)),
+        _jsDispatcher(std::move(jsDispatcher)) {}
+
+  std::shared_ptr<GPU> getGPU() { return _gpu; }
+
+  std::shared_ptr<GPUCanvasContext> createCanvasContext(int contextId,
+                                                        float width,
+                                                        float height) {
+    return std::make_shared<GPUCanvasContext>(_gpu, contextId, width, height);
+  }
+
+  std::shared_ptr<Canvas> getNativeSurface(int contextId) {
+    auto &registry = rnwgpu::SurfaceRegistry::getInstance();
+    auto info = registry.getSurfaceInfo(contextId);
+    if (info == nullptr) {
+      return std::make_shared<Canvas>(nullptr, 0, 0);
+    }
+    auto nativeInfo = info->getNativeInfo();
+    return std::make_shared<Canvas>(nativeInfo.nativeSurface, nativeInfo.width,
+                                    nativeInfo.height);
+  }
+
+  jsi::Value createImageBitmap(jsi::Runtime &runtime,
+                               const jsi::Value & /*thisVal*/,
+                               const jsi::Value *args, size_t count) {
+    if (count < 1) {
+      throw jsi::JSError(runtime,
+                         "createImageBitmap requires a Blob or ArrayBuffer "
+                         "argument");
+    }
+
+    if (_jsDispatcher == nullptr) {
+      throw jsi::JSError(runtime,
+                         "Host JSDispatcher is required for async callbacks");
+    }
+
+    auto platformContext = _platformContext;
+    auto jsDispatcher = _jsDispatcher;
+
+    if (args[0].isObject()) {
+      auto obj = args[0].getObject(runtime);
+
+      std::span<const uint8_t> data;
+
+      if (obj.isArrayBuffer(runtime)) {
+        const auto &ab = obj.getArrayBuffer(runtime);
+        data = {ab.data(runtime), ab.size(runtime)};
+      } else if (obj.hasProperty(runtime, "buffer")) {
+        auto bufferVal = obj.getProperty(runtime, "buffer");
+        if (bufferVal.isObject() &&
+            bufferVal.getObject(runtime).isArrayBuffer(runtime)) {
+          const auto &ab =
+              bufferVal.getObject(runtime).getArrayBuffer(runtime);
+          auto byteOffset = static_cast<size_t>(
+              obj.getProperty(runtime, "byteOffset").asNumber());
+          auto byteLength = static_cast<size_t>(
+              obj.getProperty(runtime, "byteLength").asNumber());
+          data = {ab.data(runtime) + byteOffset, byteLength};
+        }
+      }
+
+      if (!data.empty()) {
+        std::vector<uint8_t> dataCopy(data.begin(), data.end());
+
+        return Promise::createPromise(
+            runtime,
+            [platformContext, jsDispatcher,
+             dataCopy = std::move(dataCopy)](jsi::Runtime & /*runtime*/,
+                                             std::shared_ptr<Promise> promise)
+                mutable {
+              platformContext->createImageBitmapFromDataAsync(
+                  dataCopy,
+                  [jsDispatcher, promise](ImageData imageData) {
+                    auto imageBitmap =
+                        std::make_shared<ImageBitmap>(imageData);
+                    jsDispatcher->post([promise, imageBitmap]() {
+                      promise->resolve(
+                          JSIConverter<std::shared_ptr<ImageBitmap>>::toJSI(
+                              promise->runtime, imageBitmap));
+                    });
+                  },
+                  [jsDispatcher, promise](std::string error) {
+                    jsDispatcher->post(
+                        [promise, error = std::move(error)]() mutable {
+                          promise->reject(std::move(error));
+                        });
+                  });
+            });
+      }
+    }
+
+    auto blob =
+        JSIConverter<std::shared_ptr<Blob>>::fromJSI(runtime, args[0], false);
+    std::string blobId = blob->blobId;
+    double offset = blob->offset;
+    double size = blob->size;
+
+    return Promise::createPromise(
+        runtime,
+        [platformContext, jsDispatcher, blobId = std::move(blobId), offset,
+         size](jsi::Runtime & /*runtime*/, std::shared_ptr<Promise> promise) {
+          platformContext->createImageBitmapAsync(
+              blobId, offset, size,
+              [jsDispatcher, promise](ImageData imageData) {
+                auto imageBitmap = std::make_shared<ImageBitmap>(imageData);
+                jsDispatcher->post([promise, imageBitmap]() {
+                  promise->resolve(
+                      JSIConverter<std::shared_ptr<ImageBitmap>>::toJSI(
+                          promise->runtime, imageBitmap));
+                });
+              },
+              [jsDispatcher, promise](std::string error) {
+                jsDispatcher->post(
+                    [promise, error = std::move(error)]() mutable {
+                      promise->reject(std::move(error));
+                    });
+              });
+        });
+  }
+
+  static void definePrototype(jsi::Runtime &runtime, jsi::Object &prototype) {
+    installGetter(runtime, prototype, "gpu", &WebGPUHostObject::getGPU);
+    installMethod(runtime, prototype, "createImageBitmap",
+                  &WebGPUHostObject::createImageBitmap);
+    installMethod(runtime, prototype, "getNativeSurface",
+                  &WebGPUHostObject::getNativeSurface);
+    installMethod(runtime, prototype, "createCanvasContext",
+                  &WebGPUHostObject::createCanvasContext);
+  }
+
+private:
+  std::shared_ptr<GPU> _gpu;
+  std::shared_ptr<PlatformContext> _platformContext;
+  std::shared_ptr<host::JSDispatcher> _jsDispatcher;
+};
+
+} // namespace rnwgpu

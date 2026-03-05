@@ -1,0 +1,1117 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A24B0738445F5C12D0511914 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 87F195C201674CB496AC5394 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				82754DF1242FAB70A9F4E34A /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				CFAC23BE714242C4AD8907AF /* PBXTargetDependency */,
+				1D4E751C4AF140B4A4D0CD9D /* PBXTargetDependency */,
+				F4668683E90749AFB158CF57 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		FBAAE1825A0249B0ABE233E1 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AD11CE68E1EA4901B0E3033F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				348122F2D753277E34D83158 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1301BAE28E914406A69366EB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePassEncoder.cpp */ = {isa = PBXBuildFile; fileRef = 1DC2EE449EA949369E5CBB04 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePassEncoder.cpp */; };
+		19148F11026A4E46BEF5D3AC /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MainQueueJSDispatcher.mm */ = {isa = PBXBuildFile; fileRef = 5A74CFD04F6748C19171A90F /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MainQueueJSDispatcher.mm */; };
+		1FCC8C7C2ECF41138E84B57E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsilib-posix.cpp */ = {isa = PBXBuildFile; fileRef = B4E44F370DB34CAB8956D4E9 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsilib-posix.cpp */; };
+		285234A0D2FA46F5A66F9C75 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsi.cpp */ = {isa = PBXBuildFile; fileRef = A61B64E85D2A4446A2AD11C9 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsi.cpp */; };
+		2974D2D57E0744079E072336 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDeviceLostInfo.cpp */ = {isa = PBXBuildFile; fileRef = CCFBF1846D6342268C598E0C /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDeviceLostInfo.cpp */; };
+		2B55D6EB2237463CB9F683AD /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/ApplePlatformContext.mm */ = {isa = PBXBuildFile; fileRef = ECDB0EC67A5A4B898C881567 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/ApplePlatformContext.mm */; };
+		3616EDF07FFC4208B5384389 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeAwareCache.cpp */ = {isa = PBXBuildFile; fileRef = CA186E0CE3144A36BA932695 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeAwareCache.cpp */; };
+		362A715AA6D44C009D668163 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/CMakeFiles/webgpu-core.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 3CB46A304AF24FDF9CA73389 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/CMakeFiles/webgpu-core.dir/Info.plist */; };
+		3ABAC6D0E4574D218CFA973D /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUShaderModule.cpp */ = {isa = PBXBuildFile; fileRef = D9642BD6817D43AD9C18E2D6 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUShaderModule.cpp */; };
+		4FDB75FAB9924C8DBBA519B3 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/JSIMicrotaskDispatcher.cpp */ = {isa = PBXBuildFile; fileRef = 3C178166DFFC44F3AF329E64 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/JSIMicrotaskDispatcher.cpp */; };
+		511EB4388BD842B6B2EFD4EA /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUSupportedLimits.cpp */ = {isa = PBXBuildFile; fileRef = 5B10B91F5EAC4822BC573482 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUSupportedLimits.cpp */; };
+		55BAE43063BF4FBDAE7AECBF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderBundleEncoder.cpp */ = {isa = PBXBuildFile; fileRef = 5CF0391C09034F23AE1F8A1B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderBundleEncoder.cpp */; };
+		5CE237E58BD5470AAE675609 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUTexture.cpp */ = {isa = PBXBuildFile; fileRef = 6B8B2CF00A5D494C95F509A1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUTexture.cpp */; };
+		6B12433CB8844D1F92ADE384 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBindGroup.cpp */ = {isa = PBXBuildFile; fileRef = 6457B716DCE54D0CB9AB7F42 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBindGroup.cpp */; };
+		6C40A9D4EC064FD987622EAD /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCommandEncoder.cpp */ = {isa = PBXBuildFile; fileRef = 3B289A467DEF4ADC8FB83BC1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCommandEncoder.cpp */; };
+		6D789351F64242B5845A44E4 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6ED688775E71442DB28E34AF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/CMakeLists.txt */; };
+		75BE35323A524956A451385A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MetalSurfaceHost.mm */ = {isa = PBXBuildFile; fileRef = 9386696F205F46BAB229A9F5 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MetalSurfaceHost.mm */; };
+		771E6131E4324CBDAAAD0AD0 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPipeline.cpp */ = {isa = PBXBuildFile; fileRef = 3A93B0835CB8406DBF9C295B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPipeline.cpp */; };
+		77C644D7C6BB4CAC973FABFE /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/dawn_logging.cpp */ = {isa = PBXBuildFile; fileRef = 82D407ACC0B14796AC8783CC /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/dawn_logging.cpp */; };
+		8107CD737E2546D4888F2189 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCanvasContext.cpp */ = {isa = PBXBuildFile; fileRef = 457CFE71A15A417696BED09F /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCanvasContext.cpp */; };
+		83F5410C035447D98B04AB4E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/main.m */ = {isa = PBXBuildFile; fileRef = A1059BC9D2FA4B63A363F823 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/main.m */; };
+		89B60FEEB73344C3838B0DD9 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 106923820BF24AA98434C91B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist */; };
+		904A610E3D5340B48C045E05 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUAdapter.cpp */ = {isa = PBXBuildFile; fileRef = D8A438970DAB460A8CC2165A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUAdapter.cpp */; };
+		954A40A0186D4D46B66E3071 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPassEncoder.cpp */ = {isa = PBXBuildFile; fileRef = 634F2F25B485457F82BEBA3C /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPassEncoder.cpp */; };
+		9F484B228FE543299B0D46A1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/Promise.cpp */ = {isa = PBXBuildFile; fileRef = 4AE424F3C727479DAC548E64 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/Promise.cpp */; };
+		A59D47EAF6D04430A6BC1DBC /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPU.cpp */ = {isa = PBXBuildFile; fileRef = 63B7D485815940859CDC1858 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPU.cpp */; };
+		A6A47D07803543C8856E2465 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeLifecycleMonitor.cpp */ = {isa = PBXBuildFile; fileRef = 9BFED811098B4628B43415BB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeLifecycleMonitor.cpp */; };
+		A841714F614D43B890C58D98 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/WebGPUHostRuntime.cpp */ = {isa = PBXBuildFile; fileRef = BFDB7B6382AC4D079A9508A6 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/WebGPUHostRuntime.cpp */; };
+		A8D76D81F78440BB9F85B6BD /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQueue.cpp */ = {isa = PBXBuildFile; fileRef = F40654A1523A4D6E938B2BF2 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQueue.cpp */; };
+		AE15A884081E4A2EBE8941ED /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDevice.cpp */ = {isa = PBXBuildFile; fileRef = B319E381E81849DD845847AF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDevice.cpp */; };
+		B0F44E2389E44EFD96AA0093 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePipeline.cpp */ = {isa = PBXBuildFile; fileRef = 269376C9866C44AA97E0D317 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePipeline.cpp */; };
+		C24202E36C644E8D81209949 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBuffer.cpp */ = {isa = PBXBuildFile; fileRef = 2D8032FDC4B3478ABFD3B3BA /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBuffer.cpp */; };
+		DABC879C09ED495684E3B869 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncTaskHandle.cpp */ = {isa = PBXBuildFile; fileRef = F46C12428E1249648129C80B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncTaskHandle.cpp */; };
+		E19E5F4FE08F45BDA2A50790 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FD11DA8214124D019EAE75F2 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/CMakeLists.txt */; };
+		E73486D528144701A0563D20 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQuerySet.cpp */ = {isa = PBXBuildFile; fileRef = E0D26F996D074239A3B3ACAB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQuerySet.cpp */; };
+		F873153BAF7049A594996B7E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncRunner.cpp */ = {isa = PBXBuildFile; fileRef = F181801E62FD4D279440646A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncRunner.cpp */; };
+		F92BDC68FED7497BABA29EDA /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsc/JSCRuntime.cpp */ = {isa = PBXBuildFile; fileRef = BF415EC4641144D7B6098F23 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsc/JSCRuntime.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2FF09C7CA4E4454591411303 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		52370D71416B4DBCB1E6786A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		7BA1A40D8F3C4532A56941C8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		E73A6785414E4B15A4C90FCE /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		262A46CDA3D0495AAAD1D098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385D250960744265BBA4B665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBAAE1825A0249B0ABE233E1;
+			remoteInfo = ZERO_CHECK;
+		};
+		35500049EA754C75874C485A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385D250960744265BBA4B665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBAAE1825A0249B0ABE233E1;
+			remoteInfo = ZERO_CHECK;
+		};
+		521F318878014C439817A72A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385D250960744265BBA4B665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88FCCB2155C78FA017EE181E;
+			remoteInfo = "webgpu-core";
+		};
+		5F4C2FBAEA51410C955C247D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385D250960744265BBA4B665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF09DA4AD12A0A3DBD0C035;
+			remoteInfo = "ios-native-example";
+		};
+		B1BFEDAA3CD04BD59BA803B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385D250960744265BBA4B665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88FCCB2155C78FA017EE181E;
+			remoteInfo = "webgpu-core";
+		};
+		E4F0C311E3884190A353CA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385D250960744265BBA4B665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBAAE1825A0249B0ABE233E1;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EEAC8EACC3A43D09DD92159 /* ios-native-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "ios-native-example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		106923820BF24AA98434C91B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		1DC2EE449EA949369E5CBB04 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePassEncoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUComputePassEncoder.cpp; path = cpp/rnwgpu/api/GPUComputePassEncoder.cpp; sourceTree = SOURCE_ROOT; };
+		269376C9866C44AA97E0D317 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUComputePipeline.cpp; path = cpp/rnwgpu/api/GPUComputePipeline.cpp; sourceTree = SOURCE_ROOT; };
+		2D8032FDC4B3478ABFD3B3BA /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUBuffer.cpp; path = cpp/rnwgpu/api/GPUBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		3A93B0835CB8406DBF9C295B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPURenderPipeline.cpp; path = cpp/rnwgpu/api/GPURenderPipeline.cpp; sourceTree = SOURCE_ROOT; };
+		3B289A467DEF4ADC8FB83BC1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCommandEncoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUCommandEncoder.cpp; path = cpp/rnwgpu/api/GPUCommandEncoder.cpp; sourceTree = SOURCE_ROOT; };
+		3C178166DFFC44F3AF329E64 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/JSIMicrotaskDispatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JSIMicrotaskDispatcher.cpp; path = cpp/rnwgpu/async/JSIMicrotaskDispatcher.cpp; sourceTree = SOURCE_ROOT; };
+		3CB46A304AF24FDF9CA73389 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/CMakeFiles/webgpu-core.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build-ios/webgpu-core/CMakeFiles/webgpu-core.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		457CFE71A15A417696BED09F /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCanvasContext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUCanvasContext.cpp; path = cpp/rnwgpu/api/GPUCanvasContext.cpp; sourceTree = SOURCE_ROOT; };
+		4AE424F3C727479DAC548E64 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/Promise.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Promise.cpp; path = cpp/jsi/Promise.cpp; sourceTree = SOURCE_ROOT; };
+		5A74CFD04F6748C19171A90F /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MainQueueJSDispatcher.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = MainQueueJSDispatcher.mm; path = apple/MainQueueJSDispatcher.mm; sourceTree = SOURCE_ROOT; };
+		5B10B91F5EAC4822BC573482 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUSupportedLimits.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUSupportedLimits.cpp; path = cpp/rnwgpu/api/GPUSupportedLimits.cpp; sourceTree = SOURCE_ROOT; };
+		5CF0391C09034F23AE1F8A1B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderBundleEncoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPURenderBundleEncoder.cpp; path = cpp/rnwgpu/api/GPURenderBundleEncoder.cpp; sourceTree = SOURCE_ROOT; };
+		634F2F25B485457F82BEBA3C /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPassEncoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPURenderPassEncoder.cpp; path = cpp/rnwgpu/api/GPURenderPassEncoder.cpp; sourceTree = SOURCE_ROOT; };
+		63B7D485815940859CDC1858 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPU.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPU.cpp; path = cpp/rnwgpu/api/GPU.cpp; sourceTree = SOURCE_ROOT; };
+		6457B716DCE54D0CB9AB7F42 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBindGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUBindGroup.cpp; path = cpp/rnwgpu/api/GPUBindGroup.cpp; sourceTree = SOURCE_ROOT; };
+		6B8B2CF00A5D494C95F509A1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUTexture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUTexture.cpp; path = cpp/rnwgpu/api/GPUTexture.cpp; sourceTree = SOURCE_ROOT; };
+		6ED688775E71442DB28E34AF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "webgpu-core/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		82D407ACC0B14796AC8783CC /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/dawn_logging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dawn_logging.cpp; path = cpp/dawn_logging.cpp; sourceTree = SOURCE_ROOT; };
+		9386696F205F46BAB229A9F5 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MetalSurfaceHost.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = MetalSurfaceHost.mm; path = apple/MetalSurfaceHost.mm; sourceTree = SOURCE_ROOT; };
+		9BFED811098B4628B43415BB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeLifecycleMonitor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RuntimeLifecycleMonitor.cpp; path = cpp/jsi/RuntimeLifecycleMonitor.cpp; sourceTree = SOURCE_ROOT; };
+		A1059BC9D2FA4B63A363F823 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = main.m; path = "ios-native-example/main.m"; sourceTree = SOURCE_ROOT; };
+		A61B64E85D2A4446A2AD11C9 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jsi.cpp; path = "webgpu-core/third_party/jsi/jsi/jsi.cpp"; sourceTree = SOURCE_ROOT; };
+		B2B76F75157F4078AAA7C2A6 /* webgpu-core */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libwebgpu-core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B319E381E81849DD845847AF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDevice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUDevice.cpp; path = cpp/rnwgpu/api/GPUDevice.cpp; sourceTree = SOURCE_ROOT; };
+		B4E44F370DB34CAB8956D4E9 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsilib-posix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "jsilib-posix.cpp"; path = "webgpu-core/third_party/jsi/jsi/jsilib-posix.cpp"; sourceTree = SOURCE_ROOT; };
+		BF415EC4641144D7B6098F23 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsc/JSCRuntime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JSCRuntime.cpp; path = "webgpu-core/third_party/jsc/JSCRuntime.cpp"; sourceTree = SOURCE_ROOT; };
+		BFDB7B6382AC4D079A9508A6 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/WebGPUHostRuntime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WebGPUHostRuntime.cpp; path = cpp/rnwgpu/WebGPUHostRuntime.cpp; sourceTree = SOURCE_ROOT; };
+		CA186E0CE3144A36BA932695 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeAwareCache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RuntimeAwareCache.cpp; path = cpp/jsi/RuntimeAwareCache.cpp; sourceTree = SOURCE_ROOT; };
+		CCFBF1846D6342268C598E0C /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDeviceLostInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUDeviceLostInfo.cpp; path = cpp/rnwgpu/api/GPUDeviceLostInfo.cpp; sourceTree = SOURCE_ROOT; };
+		D8A438970DAB460A8CC2165A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUAdapter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUAdapter.cpp; path = cpp/rnwgpu/api/GPUAdapter.cpp; sourceTree = SOURCE_ROOT; };
+		D9642BD6817D43AD9C18E2D6 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUShaderModule.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUShaderModule.cpp; path = cpp/rnwgpu/api/GPUShaderModule.cpp; sourceTree = SOURCE_ROOT; };
+		E0D26F996D074239A3B3ACAB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQuerySet.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUQuerySet.cpp; path = cpp/rnwgpu/api/GPUQuerySet.cpp; sourceTree = SOURCE_ROOT; };
+		ECDB0EC67A5A4B898C881567 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/ApplePlatformContext.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ApplePlatformContext.mm; path = apple/ApplePlatformContext.mm; sourceTree = SOURCE_ROOT; };
+		EE1B2188D32443858BA2312E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F181801E62FD4D279440646A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncRunner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AsyncRunner.cpp; path = cpp/rnwgpu/async/AsyncRunner.cpp; sourceTree = SOURCE_ROOT; };
+		F40654A1523A4D6E938B2BF2 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQueue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GPUQueue.cpp; path = cpp/rnwgpu/api/GPUQueue.cpp; sourceTree = SOURCE_ROOT; };
+		F46C12428E1249648129C80B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncTaskHandle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AsyncTaskHandle.cpp; path = cpp/rnwgpu/async/AsyncTaskHandle.cpp; sourceTree = SOURCE_ROOT; };
+		FD11DA8214124D019EAE75F2 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "ios-native-example/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73ECA091EFB445C7AD8D4B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE31E72339B44F548D732825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08B52AAD579648DBA97CF53B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CB46A304AF24FDF9CA73389 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/CMakeFiles/webgpu-core.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0C5AF434575243A9BE9DB22E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				685DAD4A04C4485BAF417E97 /* CMake Rules */,
+				EE1B2188D32443858BA2312E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		20AA1C98E11845829C94458A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				82D407ACC0B14796AC8783CC /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/dawn_logging.cpp */,
+				4AE424F3C727479DAC548E64 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/Promise.cpp */,
+				CA186E0CE3144A36BA932695 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeAwareCache.cpp */,
+				9BFED811098B4628B43415BB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeLifecycleMonitor.cpp */,
+				BFDB7B6382AC4D079A9508A6 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/WebGPUHostRuntime.cpp */,
+				63B7D485815940859CDC1858 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPU.cpp */,
+				D8A438970DAB460A8CC2165A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUAdapter.cpp */,
+				6457B716DCE54D0CB9AB7F42 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBindGroup.cpp */,
+				2D8032FDC4B3478ABFD3B3BA /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBuffer.cpp */,
+				457CFE71A15A417696BED09F /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCanvasContext.cpp */,
+				3B289A467DEF4ADC8FB83BC1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCommandEncoder.cpp */,
+				1DC2EE449EA949369E5CBB04 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePassEncoder.cpp */,
+				269376C9866C44AA97E0D317 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePipeline.cpp */,
+				B319E381E81849DD845847AF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDevice.cpp */,
+				CCFBF1846D6342268C598E0C /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDeviceLostInfo.cpp */,
+				E0D26F996D074239A3B3ACAB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQuerySet.cpp */,
+				F40654A1523A4D6E938B2BF2 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQueue.cpp */,
+				5CF0391C09034F23AE1F8A1B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderBundleEncoder.cpp */,
+				634F2F25B485457F82BEBA3C /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPassEncoder.cpp */,
+				3A93B0835CB8406DBF9C295B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPipeline.cpp */,
+				D9642BD6817D43AD9C18E2D6 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUShaderModule.cpp */,
+				5B10B91F5EAC4822BC573482 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUSupportedLimits.cpp */,
+				6B8B2CF00A5D494C95F509A1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUTexture.cpp */,
+				F181801E62FD4D279440646A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncRunner.cpp */,
+				F46C12428E1249648129C80B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncTaskHandle.cpp */,
+				3C178166DFFC44F3AF329E64 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/JSIMicrotaskDispatcher.cpp */,
+				A61B64E85D2A4446A2AD11C9 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsi.cpp */,
+				B4E44F370DB34CAB8956D4E9 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsilib-posix.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		35050A4F8F8F450E8F9A1F34 /* webgpu-core */ = {
+			isa = PBXGroup;
+			children = (
+				08B52AAD579648DBA97CF53B /* Resources */,
+				20AA1C98E11845829C94458A /* Source Files */,
+				6ED688775E71442DB28E34AF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/CMakeLists.txt */,
+			);
+			name = "webgpu-core";
+			sourceTree = "<group>";
+		};
+		685DAD4A04C4485BAF417E97 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6A6378A7FDE94F7299BD9ADC /* ios-native-example */ = {
+			isa = PBXGroup;
+			children = (
+				E71895F601D54326B5084D8C /* Resources */,
+				76D5884B4330491EB1FCAF37 /* Source Files */,
+				FD11DA8214124D019EAE75F2 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/CMakeLists.txt */,
+			);
+			name = "ios-native-example";
+			sourceTree = "<group>";
+		};
+		76D5884B4330491EB1FCAF37 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB0EC67A5A4B898C881567 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/ApplePlatformContext.mm */,
+				5A74CFD04F6748C19171A90F /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MainQueueJSDispatcher.mm */,
+				9386696F205F46BAB229A9F5 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MetalSurfaceHost.mm */,
+				A1059BC9D2FA4B63A363F823 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/main.m */,
+				BF415EC4641144D7B6098F23 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsc/JSCRuntime.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BF0F43149BF14E138E687019 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CC4D0322A57344BA8A9B6BFA = {
+			isa = PBXGroup;
+			children = (
+				0C5AF434575243A9BE9DB22E /* ALL_BUILD */,
+				6A6378A7FDE94F7299BD9ADC /* ios-native-example */,
+				35050A4F8F8F450E8F9A1F34 /* webgpu-core */,
+				E380656A08924FDCBF2F5EEE /* Products */,
+				DD476D8EF4A44B658565FE70 /* Frameworks */,
+				BF0F43149BF14E138E687019 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		DD476D8EF4A44B658565FE70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E380656A08924FDCBF2F5EEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EEAC8EACC3A43D09DD92159 /* ios-native-example */,
+				B2B76F75157F4078AAA7C2A6 /* webgpu-core */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E71895F601D54326B5084D8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				106923820BF24AA98434C91B /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AF09DA4AD12A0A3DBD0C035 /* ios-native-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D9F1A3AE2F34690A55C2E86 /* Build configuration list for PBXNativeTarget "ios-native-example" */;
+			buildPhases = (
+				139F961D0A9F47A7A5953941 /* Sources */,
+				73ECA091EFB445C7AD8D4B56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07E8D83F72DE4FEDB6E8E144 /* PBXTargetDependency */,
+				904CFE889B56451093B512A3 /* PBXTargetDependency */,
+			);
+			name = "ios-native-example";
+			productName = "ios-native-example";
+			productReference = 0EEAC8EACC3A43D09DD92159 /* ios-native-example */;
+			productType = "com.apple.product-type.application";
+		};
+		88FCCB2155C78FA017EE181E /* webgpu-core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FC7DAEB25364199B2D1F9C9 /* Build configuration list for PBXNativeTarget "webgpu-core" */;
+			buildPhases = (
+				B43B4E225F434B7CB41B19C8 /* Sources */,
+				DE31E72339B44F548D732825 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2771C375385450281DCABDF /* PBXTargetDependency */,
+			);
+			name = "webgpu-core";
+			productName = "webgpu-core";
+			productReference = B2B76F75157F4078AAA7C2A6 /* webgpu-core */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		385D250960744265BBA4B665 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = A18617119CFB4D2E811E568F /* Build configuration list for PBXProject "webgpu_native" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				E73A6785414E4B15A4C90FCE /* Debug */,
+				52370D71416B4DBCB1E6786A /* Release */,
+				2FF09C7CA4E4454591411303 /* MinSizeRel */,
+				7BA1A40D8F3C4532A56941C8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = CC4D0322A57344BA8A9B6BFA;
+			projectDirPath = "/Users/enzo/projects/react-native-webgpu/packages/webgpu";
+			projectRoot = "";
+			targets = (
+				A24B0738445F5C12D0511914 /* ALL_BUILD */,
+				6AF09DA4AD12A0A3DBD0C035 /* ios-native-example */,
+				88FCCB2155C78FA017EE181E /* webgpu-core */,
+				FBAAE1825A0249B0ABE233E1 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		348122F2D753277E34D83158 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  make -f /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  make -f /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  make -f /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  make -f /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		82754DF1242FAB70A9F4E34A /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		139F961D0A9F47A7A5953941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B55D6EB2237463CB9F683AD /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/ApplePlatformContext.mm */,
+				19148F11026A4E46BEF5D3AC /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MainQueueJSDispatcher.mm */,
+				75BE35323A524956A451385A /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/apple/MetalSurfaceHost.mm */,
+				83F5410C035447D98B04AB4E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/main.m */,
+				F92BDC68FED7497BABA29EDA /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsc/JSCRuntime.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43B4E225F434B7CB41B19C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C644D7C6BB4CAC973FABFE /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/dawn_logging.cpp */,
+				9F484B228FE543299B0D46A1 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/Promise.cpp */,
+				3616EDF07FFC4208B5384389 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeAwareCache.cpp */,
+				A6A47D07803543C8856E2465 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/jsi/RuntimeLifecycleMonitor.cpp */,
+				A841714F614D43B890C58D98 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/WebGPUHostRuntime.cpp */,
+				A59D47EAF6D04430A6BC1DBC /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPU.cpp */,
+				904A610E3D5340B48C045E05 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUAdapter.cpp */,
+				6B12433CB8844D1F92ADE384 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBindGroup.cpp */,
+				C24202E36C644E8D81209949 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUBuffer.cpp */,
+				8107CD737E2546D4888F2189 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCanvasContext.cpp */,
+				6C40A9D4EC064FD987622EAD /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUCommandEncoder.cpp */,
+				1301BAE28E914406A69366EB /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePassEncoder.cpp */,
+				B0F44E2389E44EFD96AA0093 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUComputePipeline.cpp */,
+				AE15A884081E4A2EBE8941ED /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDevice.cpp */,
+				2974D2D57E0744079E072336 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUDeviceLostInfo.cpp */,
+				E73486D528144701A0563D20 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQuerySet.cpp */,
+				A8D76D81F78440BB9F85B6BD /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUQueue.cpp */,
+				55BAE43063BF4FBDAE7AECBF /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderBundleEncoder.cpp */,
+				954A40A0186D4D46B66E3071 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPassEncoder.cpp */,
+				771E6131E4324CBDAAAD0AD0 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPURenderPipeline.cpp */,
+				3ABAC6D0E4574D218CFA973D /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUShaderModule.cpp */,
+				511EB4388BD842B6B2EFD4EA /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUSupportedLimits.cpp */,
+				5CE237E58BD5470AAE675609 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/api/GPUTexture.cpp */,
+				F873153BAF7049A594996B7E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncRunner.cpp */,
+				DABC879C09ED495684E3B869 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/AsyncTaskHandle.cpp */,
+				4FDB75FAB9924C8DBBA519B3 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/cpp/rnwgpu/async/JSIMicrotaskDispatcher.cpp */,
+				285234A0D2FA46F5A66F9C75 /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsi.cpp */,
+				1FCC8C7C2ECF41138E84B57E /* /Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi/jsi/jsilib-posix.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07E8D83F72DE4FEDB6E8E144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88FCCB2155C78FA017EE181E /* webgpu-core */;
+			targetProxy = B1BFEDAA3CD04BD59BA803B2 /* PBXContainerItemProxy */;
+		};
+		1D4E751C4AF140B4A4D0CD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AF09DA4AD12A0A3DBD0C035 /* ios-native-example */;
+			targetProxy = 5F4C2FBAEA51410C955C247D /* PBXContainerItemProxy */;
+		};
+		904CFE889B56451093B512A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBAAE1825A0249B0ABE233E1 /* ZERO_CHECK */;
+			targetProxy = 262A46CDA3D0495AAAD1D098 /* PBXContainerItemProxy */;
+		};
+		CFAC23BE714242C4AD8907AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88FCCB2155C78FA017EE181E /* webgpu-core */;
+			targetProxy = 521F318878014C439817A72A /* PBXContainerItemProxy */;
+		};
+		E2771C375385450281DCABDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBAAE1825A0249B0ABE233E1 /* ZERO_CHECK */;
+			targetProxy = E4F0C311E3884190A353CA04 /* PBXContainerItemProxy */;
+		};
+		F4668683E90749AFB158CF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBAAE1825A0249B0ABE233E1 /* ZERO_CHECK */;
+			targetProxy = 35500049EA754C75874C485A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B8CEDAABCEE479585DBE417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JSI_EXPORT='","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++20' -fPIC -fexceptions ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "webgpu-core";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/webgpu-core.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2C4DC1313C984A2A8D7E92D2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphonesimulator;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build";
+			};
+			name = RelWithDebInfo;
+		};
+		2CEA11525D8B4450AECEEE10 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2D2567FD808442988F0C683D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphonesimulator;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build";
+			};
+			name = Release;
+		};
+		5AFF507E857C435080A16227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		623099AF68F2437689CB6FD2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		716466F933664E28B7F971DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../apple","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsc","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INFOPLIST_FILE = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/Debug${EFFECTIVE_PLATFORM_NAME}/libwebgpu-core.a","/Users/enzo/projects/react-native-webgpu/packages/webgpu/libs/apple/libwebgpu_dawn.xcframework/ios-arm64_x86_64-simulator/libwebgpu_dawn.a","-framework Foundation","-framework QuartzCore","-framework Metal","-framework IOSurface","-framework JavaScriptCore","-framework CoreGraphics","-framework UIKit","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webgpu.iosnativeexample;
+				PRODUCT_NAME = "ios-native-example";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/ios-native-example.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7BEA80A0EE614DFE82416CCC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphonesimulator;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build";
+			};
+			name = MinSizeRel;
+		};
+		97F0985A218144CC8BFC245D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphonesimulator;
+				SYMROOT = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build";
+			};
+			name = Debug;
+		};
+		9BA799C6176E47608493D87F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A81519DF34764EFBB246B6C3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JSI_EXPORT='","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++20' -fPIC -fexceptions ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "webgpu-core";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/webgpu-core.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B5127D57920842CE9F2F6A90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B7F0B6284465461CB63F17EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E6E3F5029FA247A1BE2A2CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../apple","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsc","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INFOPLIST_FILE = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/Release${EFFECTIVE_PLATFORM_NAME}/libwebgpu-core.a","/Users/enzo/projects/react-native-webgpu/packages/webgpu/libs/apple/libwebgpu_dawn.xcframework/ios-arm64_x86_64-simulator/libwebgpu_dawn.a","-framework Foundation","-framework QuartzCore","-framework Metal","-framework IOSurface","-framework JavaScriptCore","-framework CoreGraphics","-framework UIKit","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webgpu.iosnativeexample;
+				PRODUCT_NAME = "ios-native-example";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/ios-native-example.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E9717A6066BF420FADFDE4D9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EF48E36845AE4D02A9920835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F4448BE0CC5A4652AA59AC69 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../apple","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsc","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INFOPLIST_FILE = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libwebgpu-core.a","/Users/enzo/projects/react-native-webgpu/packages/webgpu/libs/apple/libwebgpu_dawn.xcframework/ios-arm64_x86_64-simulator/libwebgpu_dawn.a","-framework Foundation","-framework QuartzCore","-framework Metal","-framework IOSurface","-framework JavaScriptCore","-framework CoreGraphics","-framework UIKit","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webgpu.iosnativeexample;
+				PRODUCT_NAME = "ios-native-example";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/ios-native-example.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F6016A2009D74021AA203479 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JSI_EXPORT='","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -fPIC -fexceptions ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "webgpu-core";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/webgpu-core.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FE336AE68F734DDBB3F1356B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JSI_EXPORT='","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -fPIC -fexceptions ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "webgpu-core";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/webgpu-core.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FF57229E1C9640E7A5951C1C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../apple","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/ios-native-example/../webgpu-core/third_party/jsc","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/jsi","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/../cpp/rnwgpu/api/descriptors","/Users/enzo/projects/react-native-webgpu/packages/webgpu/webgpu-core/third_party/jsi","$(inherited)");
+				INFOPLIST_FILE = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/ios-native-example/CMakeFiles/ios-native-example.dir/Info.plist";
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/webgpu-core/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libwebgpu-core.a","/Users/enzo/projects/react-native-webgpu/packages/webgpu/libs/apple/libwebgpu_dawn.xcframework/ios-arm64_x86_64-simulator/libwebgpu_dawn.a","-framework Foundation","-framework QuartzCore","-framework Metal","-framework IOSurface","-framework JavaScriptCore","-framework CoreGraphics","-framework UIKit","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webgpu.iosnativeexample;
+				PRODUCT_NAME = "ios-native-example";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/enzo/projects/react-native-webgpu/packages/webgpu/build-ios/build/ios-native-example.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D9F1A3AE2F34690A55C2E86 /* Build configuration list for PBXNativeTarget "ios-native-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716466F933664E28B7F971DB /* Debug */,
+				E6E3F5029FA247A1BE2A2CC1 /* Release */,
+				FF57229E1C9640E7A5951C1C /* MinSizeRel */,
+				F4448BE0CC5A4652AA59AC69 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2FC7DAEB25364199B2D1F9C9 /* Build configuration list for PBXNativeTarget "webgpu-core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8CEDAABCEE479585DBE417 /* Debug */,
+				FE336AE68F734DDBB3F1356B /* Release */,
+				F6016A2009D74021AA203479 /* MinSizeRel */,
+				A81519DF34764EFBB246B6C3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87F195C201674CB496AC5394 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF48E36845AE4D02A9920835 /* Debug */,
+				B7F0B6284465461CB63F17EC /* Release */,
+				2CEA11525D8B4450AECEEE10 /* MinSizeRel */,
+				9BA799C6176E47608493D87F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A18617119CFB4D2E811E568F /* Build configuration list for PBXProject "webgpu_native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97F0985A218144CC8BFC245D /* Debug */,
+				2D2567FD808442988F0C683D /* Release */,
+				7BEA80A0EE614DFE82416CCC /* MinSizeRel */,
+				2C4DC1313C984A2A8D7E92D2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AD11CE68E1EA4901B0E3033F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5127D57920842CE9F2F6A90 /* Debug */,
+				5AFF507E857C435080A16227 /* Release */,
+				E9717A6066BF420FADFDE4D9 /* MinSizeRel */,
+				623099AF68F2437689CB6FD2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 385D250960744265BBA4B665 /* Project object */;
+}

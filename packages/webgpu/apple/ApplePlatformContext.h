@@ -1,13 +1,19 @@
 #pragma once
 
 #include "PlatformContext.h"
+#include <optional>
 #include <string>
+#include <vector>
 
 namespace rnwgpu {
 
 class ApplePlatformContext : public PlatformContext {
 public:
-  ApplePlatformContext();
+  using BlobResolver =
+      std::function<std::optional<std::vector<uint8_t>>(
+          const std::string &blobId, size_t offset, size_t size)>;
+
+  explicit ApplePlatformContext(BlobResolver blobResolver = nullptr);
   ~ApplePlatformContext() = default;
 
   wgpu::Surface makeSurface(wgpu::Instance instance, void *surface, int width,
@@ -26,6 +32,9 @@ public:
   void createImageBitmapFromDataAsync(
       std::span<const uint8_t> data, std::function<void(ImageData)> onSuccess,
       std::function<void(std::string)> onError) override;
+
+private:
+  BlobResolver _blobResolver;
 };
 
 } // namespace rnwgpu

@@ -75,7 +75,7 @@ LogMessage::~LogMessage() {
         case LogSeverity::Error: androidPriority = ANDROID_LOG_ERROR; break;
         default: androidPriority = ANDROID_LOG_ERROR; break;
     }
-    __android_log_print(androidPriority, "ReactNativeWebGPU", "%s: %s", severityName, fullMessage.c_str());
+    __android_log_print(androidPriority, "WebGPUCore", "%s: %s", severityName, fullMessage.c_str());
 #elif defined(__APPLE__)
     os_log_type_t logType;
     switch (mSeverity) {
@@ -85,10 +85,10 @@ LogMessage::~LogMessage() {
         case LogSeverity::Error: logType = OS_LOG_TYPE_ERROR; break;
         default: logType = OS_LOG_TYPE_ERROR; break;
     }
-    os_log_with_type(OS_LOG_DEFAULT, logType, "[ReactNativeWebGPU] %s: %s", severityName, fullMessage.c_str());
+    os_log_with_type(OS_LOG_DEFAULT, logType, "[WebGPUCore] %s: %s", severityName, fullMessage.c_str());
 #else
     FILE* outputStream = (mSeverity == LogSeverity::Warning || mSeverity == LogSeverity::Error) ? stderr : stdout;
-    fprintf(outputStream, "[ReactNativeWebGPU] %s: %s\n", severityName, fullMessage.c_str());
+    fprintf(outputStream, "[WebGPUCore] %s: %s\n", severityName, fullMessage.c_str());
     fflush(outputStream);
 #endif
 }

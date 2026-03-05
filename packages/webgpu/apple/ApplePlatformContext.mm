@@ -1,13 +1,11 @@
 #include "ApplePlatformContext.h"
+#import "RNWGUIKit.h"
 
 #include <TargetConditionals.h>
-
-#import <React/RCTBlobManager.h>
-#import <React/RCTBridge+Private.h>
-#import <ReactCommon/RCTTurboModule.h>
-
-#include "RNWebGPUManager.h"
-#include "WebGPUModule.h"
+#include <utility>
+#import <CoreGraphics/CoreGraphics.h>
+#import <Foundation/Foundation.h>
+#import <dispatch/dispatch.h>
 
 namespace rnwgpu {
 
@@ -18,14 +16,14 @@ void checkIfUsingSimulatorWithAPIValidation() {
 
   if ([metalDeviceWrapperType isEqualToString:@"1"]) {
     throw std::runtime_error(
-        "To use React Native WebGPU project on the iOS simulator, you need to "
-        "disable the Metal validation API. In 'Edit Scheme,' uncheck 'Metal "
-        "Validation.'");
+        "To run this WebGPU project on the iOS simulator, disable Metal API "
+        "validation in the scheme settings (uncheck 'Metal Validation').");
   }
 #endif
 }
 
-ApplePlatformContext::ApplePlatformContext() {
+ApplePlatformContext::ApplePlatformContext(BlobResolver blobResolver)
+    : _blobResolver(std::move(blobResolver)) {
   checkIfUsingSimulatorWithAPIValidation();
 }
 
@@ -39,46 +37,39 @@ wgpu::Surface ApplePlatformContext::makeSurface(wgpu::Instance instance,
   return instance.CreateSurface(&surfaceDescriptor);
 }
 
-static std::span<const uint8_t> nsDataToSpan(NSData *data) {
-  return {static_cast<const uint8_t *>(data.bytes), data.length};
-}
-
 ImageData ApplePlatformContext::createImageBitmap(std::string blobId,
                                                   double offset, double size) {
-  RCTBlobManager *blobManager =
-      [[RCTBridge currentBridge] moduleForClass:RCTBlobManager.class];
-  NSData *blobData =
-      [blobManager resolve:[NSString stringWithUTF8String:blobId.c_str()]
-                    offset:(long)offset
-                      size:(long)size];
+  if (_blobResolver == nullptr) {
+    throw std::runtime_error(
+        "Blob resolver is not configured for ApplePlatformContext");
+  }
 
-  if (!blobData) {
+  auto resolved = _blobResolver(blobId, static_cast<size_t>(offset),
+                                static_cast<size_t>(size));
+  if (!resolved.has_value()) {
     throw std::runtime_error("Couldn't retrieve blob data");
   }
 
-  return createImageBitmapFromData(nsDataToSpan(blobData));
+  return createImageBitmapFromData(*resolved);
 }
 
 void ApplePlatformContext::createImageBitmapAsync(
     std::string blobId, double offset, double size,
     std::function<void(ImageData)> onSuccess,
     std::function<void(std::string)> onError) {
-  // Resolve blob on current thread (requires RCTBridge access)
-  RCTBlobManager *blobManager =
-      [[RCTBridge currentBridge] moduleForClass:RCTBlobManager.class];
-  NSData *blobData =
-      [blobManager resolve:[NSString stringWithUTF8String:blobId.c_str()]
-                    offset:(long)offset
-                      size:(long)size];
+  if (_blobResolver == nullptr) {
+    onError("Blob resolver is not configured for ApplePlatformContext");
+    return;
+  }
 
-  if (!blobData) {
+  auto resolved = _blobResolver(blobId, static_cast<size_t>(offset),
+                                static_cast<size_t>(size));
+  if (!resolved.has_value()) {
     onError("Couldn't retrieve blob data");
     return;
   }
 
-  // blobData is alive during this synchronous call;
-  // createImageBitmapFromDataAsync copies the span before dispatching
-  createImageBitmapFromDataAsync(nsDataToSpan(blobData), std::move(onSuccess),
+  createImageBitmapFromDataAsync(*resolved, std::move(onSuccess),
                                  std::move(onError));
 }
 
